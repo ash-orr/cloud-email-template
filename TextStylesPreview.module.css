@@ -1,0 +1,13 @@
+.preview {
+  color: var(--text-color-default);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  word-break: break-word;
+}
+
+.text {
+  margin: 0;
+  width: 100%;
+}

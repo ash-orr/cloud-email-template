@@ -1,0 +1,18 @@
+:root {
+  /* Elevation tokens generated from Figma */
+  --elevation-1: 0px 1px 2px 0px rgba(10,21,48,0.05);
+  --elevation-2: 0px 2px 6px 0px rgba(119,135,145,0.24);
+  --elevation-3: 0px 8px 8px 0px rgba(119,135,145,0.16), 0px 24px 20px 0px rgba(119,135,145,0.12);
+  --elevation-4: 12px 4px 12px 0px rgba(119,135,145,0.28);
+}
+
+/* Utility classes to apply elevations */
+.elevation {
+  background: var(--color-ui-white);
+  border-radius: 4px;
+}
+
+.elevation-1 { box-shadow: var(--elevation-1); }
+.elevation-2 { box-shadow: var(--elevation-2); }
+.elevation-3 { box-shadow: var(--elevation-3); }
+.elevation-4 { box-shadow: var(--elevation-4); }

@@ -1,0 +1,265 @@
+// ============================================================
+// Button Component
+// Variants:  primary | secondary | tertiary
+// Modifiers: destructive
+// Sizes:     small | default
+// States:    hover | pressed | disabled
+// ============================================================
+
+// ------------------------------------------------------------
+// Base
+// ------------------------------------------------------------
+.btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+  // Shared typography base (buttons always use primary font, semibold)
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-default);
+
+  // ----------------------------------------------------------
+  // Sizes
+  // ----------------------------------------------------------
+  &--small {
+    height: 28px;
+    padding: 2px 4px;
+    border-radius: 4px;
+
+    // Maps to smallSemibold text style
+    font-size: var(--font-size-body-small);
+    line-height: var(--line-height-body-small);
+
+    .btn__icon {
+      width: 16px;
+      height: 16px;
+      padding: 4px 4px 8px 4px;
+      font-size: 12px;
+      line-height: 21px;
+    }
+
+    .btn__label {
+      height: 20px;
+    }
+  }
+
+  &--default {
+    height: 36px;
+    padding: 8px 16px;
+    border-radius: 6px;
+
+    // Maps to bodySemibold text style
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    .btn__icon {
+      width: 20px;
+      height: 20px;
+      padding: 6px 4px 10px 4px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .btn__label {
+      height: 24px;
+    }
+  }
+
+  // ----------------------------------------------------------
+  // Variants
+  // ----------------------------------------------------------
+
+  // Primary — white label on teal background
+  &--primary {
+    background-color: var(--color-button-default-active);
+    color: var(--color-ui-white);
+
+    &:hover,
+    &.is-hovered {
+      background-color: var(--color-button-default-hover);
+      color: var(--color-ui-white);
+    }
+
+    &:active,
+    &.is-pressed {
+      background-color: var(--color-button-default-pressed);
+      color: var(--color-ui-white);
+    }
+
+    &:disabled,
+    &.is-disabled {
+      background-color: var(--color-button-default-disabled);
+      color: var(--color-text-disabled);  // #A3A3A3
+      cursor: not-allowed;
+    }
+  }
+
+  // Secondary — teal label on white background with teal border
+  &--secondary {
+    background-color: var(--color-button-secondary-default);
+    color: var(--color-button-secondary-border);   // #00838F
+    border: 1px solid var(--color-button-secondary-border);
+
+    &:hover,
+    &.is-hovered {
+      background-color: var(--color-button-secondary-hover);
+      color: var(--color-button-secondary-border);
+    }
+
+    &:active,
+    &.is-pressed {
+      background-color: var(--color-button-secondary-pressed);
+      color: var(--color-button-secondary-border);
+    }
+
+    &:disabled,
+    &.is-disabled {
+      color: var(--color-text-disabled);           // #A3A3A3
+      border-color: var(--color-text-disabled);
+      cursor: not-allowed;
+    }
+  }
+
+  // Tertiary — teal label, transparent background (ghost)
+  &--tertiary {
+    background-color: var(--color-ui-white);
+    color: var(--color-button-secondary-border);   // #00838F
+
+    &:hover,
+    &.is-hovered {
+      background-color: var(--color-button-secondary-hover);
+      color: var(--color-button-secondary-border);
+    }
+
+    &:active,
+    &.is-pressed {
+      background-color: var(--color-button-secondary-pressed);
+      color: var(--color-button-secondary-border);
+    }
+
+    &:disabled,
+    &.is-disabled {
+      color: var(--color-text-disabled);           // #A3A3A3
+      cursor: not-allowed;
+    }
+  }
+
+  // ----------------------------------------------------------
+  // Destructive modifier
+  // Always combined with a variant: .btn--destructive.btn--primary
+  // ----------------------------------------------------------
+  &--destructive {
+
+    &.btn--primary {
+      background-color: var(--color-button-primary-destructive-default);  // #D3302F
+      color: var(--color-ui-white);
+
+      &:hover,
+      &.is-hovered {
+        background-color: var(--color-button-primary-destructive-hover);  // #E74A49
+        color: var(--color-ui-white);
+      }
+
+      &:active,
+      &.is-pressed {
+        background-color: var(--color-button-primary-destructive-pressed); // #CA0E0C
+        color: var(--color-ui-white);
+      }
+
+      &:disabled,
+      &.is-disabled {
+        background-color: var(--color-button-default-disabled);
+        color: var(--color-text-disabled);
+        cursor: not-allowed;
+      }
+    }
+
+    &.btn--secondary {
+      color: var(--color-button-primary-destructive-default);             // #D3302F
+      border-color: var(--color-button-primary-destructive-default);
+
+      &:hover,
+      &.is-hovered {
+        background-color: var(--color-button-secondary-hover);
+        color: var(--color-button-primary-destructive-default);
+      }
+
+      &:active,
+      &.is-pressed {
+        background-color: var(--color-button-secondary-pressed);
+        color: var(--color-button-primary-destructive-default);
+      }
+
+      &:disabled,
+      &.is-disabled {
+        color: var(--color-text-disabled);
+        border-color: var(--color-text-disabled);
+        cursor: not-allowed;
+      }
+    }
+
+    &.btn--tertiary {
+      color: var(--color-button-primary-destructive-default);             // #D3302F
+
+      &:hover,
+      &.is-hovered {
+        background-color: var(--color-button-tertiary-destructive-hover); // #FEF0F0
+        color: var(--color-button-primary-destructive-default);
+      }
+
+      &:active,
+      &.is-pressed {
+        background-color: var(--color-button-tertiary-destructive-pressed); // #FFDCDC
+        color: var(--color-button-primary-destructive-default);
+      }
+
+      &:disabled,
+      &.is-disabled {
+        color: var(--color-text-disabled);
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // ----------------------------------------------------------
+  // Inner elements
+  // ----------------------------------------------------------
+
+  // Content wrapper
+  &__content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  // Icon — inherits color from parent variant
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    font-family: 'Font Awesome 7 Pro', sans-serif;
+    font-weight: var(--font-weight-regular);  // 400 — FA uses regular weight
+    color: inherit;
+  }
+
+  // Label — inherits color from parent variant
+  &__label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+    padding: 0 4px;
+    font-weight: var(--font-weight-semibold); // 600
+    color: inherit;
+  }
+}

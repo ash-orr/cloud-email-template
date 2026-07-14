@@ -1,0 +1,29 @@
+/* Color tokens from Figma node 2245:1314 */
+:root {
+  --color-text-default: #404040;
+  --color-text-description: #545454;
+  --color-text-disabled: #a3a3a3;
+  --color-text-error: #d3302f;
+  --color-text-hyperlink: #007c96;
+
+  --color-white: #ffffff;
+  --color-gray-100: #f5f5f5;
+  --color-gray-300: #dedede;
+
+  --color-teal-100: #f2fafb;
+  --color-teal-200: #cfeef1;
+  --color-teal-400: #2399ad;
+  --color-teal-600: #00838f;
+  --color-teal-800: #0b6d76;
+  --color-teal-gradient: linear-gradient(124.1518deg, #68bdc2 18.263%, #63aaf0 96.487%);
+
+  --color-red-100: #fef0f0;
+  --color-red-200: #ffdcdc;
+  --color-red-500: #e74a49;
+  --color-red-600: #d3302f;
+  --color-red-700: #ca0e0c;
+
+  --color-green-500: #37a900;
+  --color-yellow-500: #ffc700;
+  --color-purple-400: #b579c9;
+}

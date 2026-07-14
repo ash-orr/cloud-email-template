@@ -1,0 +1,20 @@
+.canvas {
+  background: #d3d3d3;
+  border: 1px dashed #6d3cff;
+  border-radius: 2px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 124px;
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 14px;
+}

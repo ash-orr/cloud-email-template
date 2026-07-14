@@ -1,0 +1,71 @@
+/* GuestPass text style tokens exported from captive portal prototype */
+:root {
+  /* Font families */
+  --text-font-family-primary: 'Figtree', sans-serif;
+
+  /* Font weights */
+  --text-weight-regular: 400;
+  --text-weight-medium: 500;
+  --text-weight-semibold: 600;
+
+  /* Font sizes */
+  --text-size-10: 10px;
+  --text-size-11: 11px;
+  --text-size-12: 12px;
+  --text-size-13: 13px;
+  --text-size-14: 14px;
+  --text-size-15: 15px;
+  --text-size-16: 16px;
+  --text-size-18: 18px;
+  --text-size-20: 20px;
+  --text-size-24: 24px;
+
+  /* Letter spacing */
+  --text-tracking-tight: 0.05em;
+  --text-tracking-wide: 0.06em;
+  --text-tracking-wider: 0.08em;
+
+  /* Semantic text tokens used in the prototype */
+  --text-sidebar-brand-size: var(--text-size-15);
+  --text-sidebar-brand-weight: var(--text-weight-semibold);
+
+  --text-nav-section-size: var(--text-size-10);
+  --text-nav-section-weight: var(--text-weight-semibold);
+  --text-nav-section-tracking: var(--text-tracking-wider);
+
+  --text-nav-item-size: var(--text-size-13);
+  --text-nav-item-weight: var(--text-weight-regular);
+  --text-nav-item-active-weight: var(--text-weight-medium);
+
+  --text-topbar-title-size: var(--text-size-16);
+  --text-topbar-title-weight: var(--text-weight-semibold);
+  --text-topbar-subtitle-size: var(--text-size-12);
+
+  --text-button-size: var(--text-size-13);
+  --text-button-weight: var(--text-weight-medium);
+  --text-button-line-height: 1.2;
+
+  --text-button-disabled-size: var(--text-size-13);
+  --text-button-disabled-weight: var(--text-weight-regular);
+  --text-button-disabled-line-height: 1.2;
+
+  --text-card-label-size: var(--text-size-11);
+  --text-card-label-weight: var(--text-weight-medium);
+  --text-card-label-tracking: var(--text-tracking-tight);
+
+  --text-stat-value-size: var(--text-size-24);
+  --text-stat-value-weight: var(--text-weight-semibold);
+
+  --text-section-title-size: var(--text-size-14);
+  --text-section-title-weight: var(--text-weight-semibold);
+
+  --text-table-header-size: var(--text-size-11);
+  --text-table-header-weight: var(--text-weight-semibold);
+  --text-table-header-tracking: var(--text-tracking-wide);
+
+  --text-body-size: var(--text-size-13);
+  --text-body-weight: var(--text-weight-regular);
+
+  --text-caption-size: var(--text-size-11);
+  --text-caption-weight: var(--text-weight-regular);
+}
