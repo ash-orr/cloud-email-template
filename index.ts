@@ -4,5 +4,6 @@ export { default as Logo } from './Logo';
 export { default as TextStylesPreview } from './TextStylesPreview';
 export {
 	renderCloudEmailTemplate,
+	renderCloudEmailTemplateText,
 	type CloudEmailTemplateParams,
 } from './src/emailTemplate';

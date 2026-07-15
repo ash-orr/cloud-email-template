@@ -75,3 +75,36 @@ export function renderCloudEmailTemplate(params: CloudEmailTemplateParams): stri
     .replace(/\{\{domainName\}\}/g, domainName)
     .replace(/\{\{activationUrl\}\}/g, activationUrl);
 }
+
+export function renderCloudEmailTemplateText(
+  params: CloudEmailTemplateParams
+): string {
+  const organizationName = params.organizationName.trim();
+  const domainName = params.domainName.trim();
+  const activationUrl = params.activationUrl.trim();
+
+  return [
+    "Portnox Cloud",
+    "",
+    "Welcome to Portnox Cloud - let's complete your setup.",
+    "",
+    `To gain access to your ${organizationName} Portnox Cloud organization, please verify your mail domain below.`,
+    "",
+    `To activate the mail domain ${domainName} and complete your account setup, use this link:`,
+    activationUrl,
+    "",
+    "This verification link expires in 48 hours. If you did not initiate this request, no action is required.",
+    "",
+    "Helpful resources:",
+    "- Quick Start Guide: https://docs.portnox.com/topics/quick_start",
+    "- Support Center: https://success.portnox.com/s/",
+    "- Learn more: https://docs.portnox.com/?utm_medium=website&utm_source=home",
+    "- Blog and Best Practices: https://www.portnox.com/resources/",
+    "",
+    "For assistance, contact support@portnox.com or visit https://success.portnox.com/s/.",
+    "",
+    "© 2026 Portnox | Access Layers, all rights reserved.",
+    "Privacy Policy: https://www.portnox.com/privacy-policy",
+    "Terms of Service: https://www.portnox.com/terms-of-service",
+  ].join("\n");
+}
