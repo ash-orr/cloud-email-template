@@ -22,14 +22,14 @@
 .mail-header {
   padding: 18px 24px;
   border-bottom: 1px solid var(--color-light-border-1);
-  background: var(--color-light-bg-1);
+  background: #0b4a53;
 }
 
 .mail-brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--color-light-text-1);
+  color: #ffffff;
   font-size: var(--text-size-16);
   font-weight: var(--text-weight-semibold);
 }

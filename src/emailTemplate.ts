@@ -19,7 +19,7 @@ const baseTemplate = `<!doctype html>
           <td align="center" style="padding:28px 12px;">
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="760" style="width:760px;max-width:760px;background-color:#ffffff;border:1px solid #d8e0ea;border-radius:14px;border-collapse:collapse;">
               <tr>
-                <td style="padding:18px 24px;border-bottom:1px solid #d8e0ea;font-family:Figtree,Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:600;color:#171d26;">
+                <td style="padding:18px 24px;border-bottom:1px solid #d8e0ea;background-color:#0b4a53;font-family:Figtree,Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:600;color:#ffffff;">
                   Portnox Cloud
                 </td>
               </tr>

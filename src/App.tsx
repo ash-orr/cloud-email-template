@@ -1,5 +1,4 @@
 import Button from '../Button';
-import Logo from '../Logo';
 
 export function App() {
   const organizationName = 'Ash test';
@@ -10,7 +9,6 @@ export function App() {
       <div className="mail-card">
         <header className="mail-header">
           <div className="mail-brand">
-            <Logo property1="Icon" version="New (SVG)" />
             <span>Portnox Cloud</span>
           </div>
         </header>
