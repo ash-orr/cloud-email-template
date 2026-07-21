@@ -6,7 +6,7 @@
     radial-gradient(circle at 20% 0%, rgba(35, 153, 173, 0.08) 0, transparent 38%),
     linear-gradient(180deg, #f3f6fa 0%, #e8edf3 100%);
   color: var(--color-light-text-1);
-  font-family: var(--text-font-family-primary);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .mail-card {
@@ -30,8 +30,9 @@
   align-items: center;
   gap: 10px;
   color: #ffffff;
-  font-size: var(--text-size-16);
-  font-weight: var(--text-weight-semibold);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
 }
 
 .mail-content {
@@ -41,21 +42,22 @@
 .mail-content h1 {
   margin: 0 0 14px;
   color: var(--color-light-text-1);
-  font-size: 30px;
-  line-height: 1.18;
-  font-weight: var(--text-weight-semibold);
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 600;
 }
 
 .mail-content p {
   margin: 0 0 12px;
   color: var(--color-light-text-2);
-  font-size: var(--text-size-15);
-  line-height: 1.58;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .mail-content strong {
   color: var(--color-light-text-1);
-  font-weight: var(--text-weight-semibold);
+  font-weight: 600;
 }
 
 .mail-cta {
@@ -69,7 +71,8 @@
 
 .mail-expiry {
   color: var(--color-light-text-3);
-  font-size: var(--text-size-13);
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .mail-resources {
@@ -82,9 +85,10 @@
   margin: 0 0 12px;
   color: var(--color-light-text-1);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: var(--text-size-11);
-  font-weight: var(--text-weight-semibold);
+  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 .resource-grid {
@@ -97,7 +101,7 @@
 .mail-help a,
 .mail-footer a {
   color: var(--color-text-hyperlink);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .resource-grid a:hover,
@@ -109,8 +113,8 @@
 .mail-help {
   margin: 14px 0 0;
   color: var(--color-light-text-2);
-  font-size: var(--text-size-13);
-  line-height: 1.55;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .mail-footer {
@@ -120,7 +124,8 @@
   gap: 12px;
   padding: 14px 24px 18px;
   color: var(--color-light-text-3);
-  font-size: var(--text-size-12);
+  font-size: 12px;
+  line-height: 18px;
   border-top: 1px solid var(--color-light-border-1);
 }
 
@@ -134,7 +139,8 @@
   }
 
   .mail-content h1 {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .mail-header,
