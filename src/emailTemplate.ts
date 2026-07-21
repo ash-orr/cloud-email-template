@@ -30,8 +30,8 @@ const baseTemplate = `<!doctype html>
                   <p style="margin:0 0 12px;font-size:14px;line-height:21px;font-weight:400;color:#566273;">To activate the mail domain <strong style="color:#171d26;font-weight:600;">{{domainName}}</strong> and complete your account setup, click the button below.</p>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:18px 0 12px;border-collapse:collapse;">
                     <tr>
-                      <td align="center" style="border-radius:4px;background-color:#00838f;">
-                        <a href="{{activationUrl}}" target="_blank" style="display:inline-block;min-width:210px;padding:11px 18px;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:16px;font-weight:500;color:#ffffff;text-decoration:none;border-radius:4px;">Activate Mail Domain</a>
+                      <td align="center" style="border-radius:6px;background-color:#00838f;">
+                        <a href="{{activationUrl}}" target="_blank" style="display:inline-block;min-width:210px;padding:8px 16px;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:6px;">Activate Mail Domain</a>
                       </td>
                     </tr>
                   </table>
