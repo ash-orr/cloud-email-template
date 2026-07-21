@@ -1,0 +1,27 @@
+Cloud Email Template Change Record
+Generated: 2026-07-21
+Base branch: develop
+
+Summary of completed email-template updates:
+1) Implemented Figma Make-based email template layout in app preview.
+2) Added production email HTML template file.
+3) Added TypeScript HTML renderer with placeholder substitution.
+4) Added plain-text fallback renderer for multipart emails.
+5) Switched header to solid dark teal.
+6) Aligned typography to frontend-bootstrap SCSS values (Open Sans, heading/body/small scales, link behavior).
+7) Aligned button styles to frontend-bootstrap/SCSS button definitions (size, radius, spacing, weight, CTA button styles).
+
+Primary files updated:
+- src/App.tsx
+- src/App.css
+- email/cloud-email-template.html
+- src/emailTemplate.ts
+- index.ts
+- Button.module.css
+
+Key commits on develop:
+- f1188c6  Add email-ready HTML template and renderer
+- 6566902  Add plain-text fallback renderer for cloud email template
+- 96154f7  Use solid dark teal header for app and email templates
+- 93e8b20  Align template typography with bootstrap SCSS styles
+- a94ea0d  Align button styles with bootstrap SCSS definitions
